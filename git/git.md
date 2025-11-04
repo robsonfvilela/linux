@@ -27,20 +27,26 @@ Cria uma mensagem de commit para as alterações, tornando-as parte do históric
 ```bash
 git commit -m "Adicionar novo recurso"
 ```
-### `git status``
+### `git status`
 Exibe informações importantes sobre as modificações e o status de preparação de seus arquivos.
 ```bash
 git status
 ```
 ### `git log`
-Em sua forma básica, o git log permite visualizar uma lista cronológica do histórico de commits:
+Permite visualizar uma lista cronológica do histórico de commits:
+```bash
 git log
-git diff
-Esse comando permite comparar as alterações entre o diretório de trabalho e o commit mais recente. Por exemplo, esse uso do git diff identifica as diferenças em um arquivo específico:
+```
+### `git diff`
+Compara as alterações entre o diretório de trabalho e o commit mais recente. Por exemplo, **esse uso** do git diff identifica as diferenças em um arquivo específico:
+```bash
 git diff arquivo1.txt
+```
 Para comparar as alterações entre dois commits, use o seguinte:
+```bash
 git diff commit1 commit2
-git rm
+```
+### `git rm`
 Esse comando remove arquivos do seu diretório de trabalho e prepara a remoção para o próximo commit.
 git rm arquivo1.txt
 git mv
