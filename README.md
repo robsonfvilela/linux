@@ -7,8 +7,15 @@
 - [`kitty.conf`](/kitty/kitty.conf)
 
 ### NeoVim
-- [init.lua](/nvim/init.lua)
 - [options.lua](/nvim/lua/config/options.lua)
+- [init.lua](/nvim/init.lua)
+```css
+|-- nvim/
+|   |-- lua/
+|   |   |-- config/
+|   |       |-- options.lua
+|   |-- init.lua
+```
 
 ### ZSH
 - [.zshrc](/zsh/.zshrc)
