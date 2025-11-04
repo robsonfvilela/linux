@@ -47,45 +47,73 @@ Para comparar as alterações entre dois commits, use o seguinte:
 git diff commit1 commit2
 ```
 ### `git rm`
-Esse comando remove arquivos do seu diretório de trabalho e prepara a remoção para o próximo commit.
+Remove arquivos do seu diretório de trabalho e prepara a remoção para o próximo commit.
+```bash
 git rm arquivo1.txt
-git mv
-Use esse comando para renomear e mover arquivos em seu diretório de trabalho. Aqui está o comando do Git para renomear um arquivo:
-git mv arquivo1.txt arquivo2.txt
+```
+### `git mv`
+Renomeia e move arquivos em seu diretório de trabalho. Aqui está o comando do Git para renomear um arquivo:
+```bash
+git mv arquivo1.txt arquivo2.txt```
 Para mover um arquivo para um diretório diferente, digite:
+```bash
 git mv arquivo1.txt nova_pasta/
-git config
-Esse comando configura vários aspectos do Git, incluindo informações e preferências do usuário. Por exemplo, digite esse comando para definir seu endereço de e-mail para os commits:
-git config --global user.email "seu-email@exemplo.com"
-O sinalizador -global aplica as configurações universalmente, afetando seu repositório local.
-Comandos de branch e merge do Git
+```
+### `git config`
 
+Configura vários aspectos do Git, incluindo informações e preferências do usuário. Por exemplo, digite esse comando para definir seu endereço de e-mail para os commits:
+```bash
+git config --global user.email "seu-email@exemplo.com"
+```
+O sinalizador `-global` aplica as configurações universalmente, afetando seu repositório local.
+
+## Comandos de branch e merge
+
+### `git branchi`
+gerencia ramificações em seu repositório Git. Aqui está o uso básico do git branch para listar todas as ramificações existentes:
+```bash
 git branch
-Use esse comando para gerenciar ramificações em seu repositório Git. Aqui está o uso básico do git branch para listar todas as ramificações existentes:
-git branch
-Para criar um branch do Git chamada “recurso”, use:
+```
+Para criar um branch chamada “recurso”, use:
+```bash
 git branch recurso
-Para renomear um branch do Git, digite este comando:
+```
+Renomeia um branch:
+```bash
 git branch -m nome-do-branch novo-nome-do-branch
-git checkout
-Esse comando permite alternar entre ramificações e restaurar arquivos de diferentes commits.
-Veja abaixo como usar o git checkout para mudar para um branch existente:
+```
+
+### `git checkouti`
+Permite alternar entre ramificações e restaurar arquivos de diferentes commits.
+Mudar para um branch existente:
+```bash
 git checkout nome_do_branch
-Para descartar alterações em um arquivo específico e revertê-lo para o último commit, use:
+```
+Descarta alterações em um arquivo específico e revertê-lo para o último commit:
+```bash
 git checkout -- nome_do_arquivo
-git merge
-Para mesclar um branch de recurso ou tópico no branch principal do Git, use esse comando. Abaixo está um exemplo de uso do git merge:
+```
+### `git merge``
+Mescla um branch de recurso ou tópico no branch principal. Abaixo está um exemplo de uso do `git merge`:
+```bash
 git merge nome_do_branch
-git cherry-pick
-Esse comando permite que você aplique commits específicos de um branch para outro sem mesclar um branch inteiro.
+```
+### `git cherry-pick`
+Permite que aplicar commits específicos de um branch para outro sem mesclar um branch inteiro.
+```bash
 git cherry-pick commit_hash
-git rebase
-Esse comando é usado para aplicar alterações de um branch do Git em outro, movendo ou combinando commits. Ele ajuda a manter um histórico de commits mais limpo:
+```
+### `git rebase`
+Aplica alterações de um branch do Git em outro, movendo ou combinando commits. Ele ajuda a manter um histórico de commits mais limpo:
+```bash
 git rebase main
-git tag
-Esse comando marca pontos específicos em seu histórico do Git, como v1.0 ou v2.0:
+```
+### git tag
+Marca pontos específicos em seu histórico do Git, como v1.0 ou v2.0:
+```bash
 git tag v1.0
-Comandos de repositório remoto Git
+```
+## Comandos de repositório remoto Git
 
 git clone
 Esse comando cria uma cópia de um repositório remoto em seu computador local. Um exemplo de uso básico do git clone é clonar um repositório do GitHub:
