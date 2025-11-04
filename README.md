@@ -2,4 +2,4 @@
 
 ## Arquivos de configuração
 
-- [init.lua](/nvin/init.lua)
+- [init.lua](/nvim/init.lua)
