@@ -2,19 +2,23 @@
 
 ## Comandos básicos do Git
 
+### `git init`
+Inicia um novo repositório Git em um diretório.
 ```bash
 git init
 ```
-→ Inicia um novo repositório Git em um diretório.
 
-```bash
-git init [nome do projeto]
-```
 Cria um novo repositório enquanto especifica o nome do projeto.
-git add
-Esse comando é usado para preparar alterações em arquivos, preparando-os para o próximo commit:
+```bash
+git init [nome_do_projeto]
+```
+
+### `git add`
+Prepara alterações em arquivos para o próximo commit:
+```bash
 git add nome_do_arquivo
-git commit
+```
+### `git commit`
 Use esse comando para criar uma mensagem de commit para as alterações, tornando-as parte do histórico do seu projeto:
 git commit -m "Adicionar novo recurso"
 git status
