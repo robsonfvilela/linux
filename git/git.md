@@ -128,46 +128,80 @@ Se desejar enviar as das alterações do repositório local chamado “principal
 git push origem principal
 ```
 ### `git pull`
-Esse comando obtém e integra as alterações de um repositório remoto em seu branch local atual. Aqui está um exemplo de uso do git pull para extrair alterações do branch principal:
+Obtém e integra as alterações de um repositório remoto em seu branch local atual. Aqui está um exemplo de uso do git pull para extrair alterações do branch principal:
+```bash
 git pull origem mestre
-git fetch
-Para recuperar novos commits de um repositório remoto sem mesclá-los automaticamente em seu branch atual, use este comando:
+```
+### `git fetch`
+Recupera novos commits de um repositório remoto sem mesclá-los automaticamente em seu branch atual, use este comando:
+```bash
 git fetch origem
+```
+### `git remote``
+Gerencia os repositórios remotos associados ao seu repositório local.
+Lista os repositórios remotos configurados no projeto:
+```bash
 git remote
-Esse comando gerencia os repositórios remotos associados ao seu repositório local. O uso básico do git remote lista o repositório remoto:
-git remote
-Para adicionar um novo repositório remoto, especifique seu nome e URL. Por exemplo:
+```
+Lista os nomes e as URL associadas a cada diretório remoto:
+```bash
+git remote -v
+```
+Para adicionar um novo repositório remoto, especifique seu nome e URL: 
+```bash
 git remote add origem https://github.com/username/origem.git
-git submodule
-Esse comando é usado para gerenciar repositórios separados incorporados dentro de um repositório Git.
+```
+### `git submodule`
+Usado para gerenciar repositórios separados incorporados dentro de um repositório Git.
 Para adicionar um submódulo ao seu repositório principal, use:
+```bash
 git submodule add https://github.com/username/submodule-repo.git caminho/do/submodulo
-Comandos avançados do Git
+```
+## Comandos avançados do Git
 
-git reset
-Esse comando serve para desfazer alterações e manipular o histórico de commits. Aqui está um exemplo básico de uso dogit reset para desfazer alterações:
+### `git reset`
+Desfaz alterações e manipula o histórico de commits.
+```bash
 git reset arquivo1.txt
+```
+### `git stash`
+Armazena alterações temporárias que ainda não estão prontas para receber o commit.
+```bash
 git stash
-Para armazenar alterações temporárias que ainda não estão prontas para receber o commit, use esse comando:
-git stash
+```
 Para ver uma lista dos armazenamentos temporários:
+```bash
 git stash list
+```
 Para aplicar a alteração mais recente e removê-la da lista de alterações temporárias:
+```bash
 git stash pop
-git bisect
-Esse comando é usado principalmente para identificar bugs ou problemas no histórico do seu projeto. Para iniciar o processo de bissecção, use esse comando:
+```
+### `git bisect`
+Usado principalmente para identificar bugs ou problemas no histórico do seu projeto.
+Para iniciar o processo de bissecção:
+```bash
 git bisect start
+```
 Usando o comando abaixo, o Git navegará automaticamente pelos commits para encontrar os que apresentam problemas:
+```bash
 git bisect run <test-script>
-git blame
-Esse comando determina o autor e a alteração mais recente em cada linha do arquivo:
+```
+### `git blame`
+Determina o autor e a alteração mais recente em cada linha do arquivo:
+```bash
 git blame arquivo1.txt
+```
+### `git reflog`
+Faz um registro das alterações de um branch do Git. Ele permite que você acompanhe a linha do tempo do seu repositório, mesmo quando os commits são excluídos ou perdidos:
+```bash
 git reflog
-Esse comando faz um registro das alterações de um branch do Git. Ele permite que você acompanhe a linha do tempo do seu repositório, mesmo quando os commits são excluídos ou perdidos:
-git reflog
-git clean
-Por último, mas não menos importante, esse comando remove arquivos não rastreados de seu diretório de trabalho, o que resulta em um repositório mais limpo e organizado:
+```
+### `git clean`
+Remove arquivos não rastreados de seu diretório de trabalho, o que resulta em um repositório mais limpo e organizado:
+```bash
 git clean [options]
+```
 As [options] podem ser personalizadas com base em suas necessidades específicas, como -n para uma execução seca (dry run), -f para forçar ou -d para diretórios.
 
 
@@ -179,3 +213,5 @@ As [options] podem ser personalizadas com base em suas necessidades específicas
 - `git remote show origin`: Mostra detalhes completos da configuração.
 - `git config --get remote.origin.url`: Mostra só o push do origin do repositório remoto atual. 
 
+## Referências:
+[Comandos Git: uma lista dos mais usados para simplificar seu trabalho](https://www.hostinger.com/br/tutoriais/comandos-git?utm_campaign=Generic-Tutorials-DSA-t3%7CNT:Se%7CLO:BR&utm_medium=ppc&gad_source=1&gad_campaignid=19588998604&gbraid=0AAAAADMy-hbelzrSz2wqeXvzkYn-l-XdG&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUZ2nhGcfS3FwDh4lO8-EVh3HABQ3_3lhxkMlaAeAIDPr3fa4bUg6YaAiniEALw_wcB).Disponível em: \<https://www.hostinger.com/br/tutoriais/comandos-git?utm_campaign=Generic-Tutorials-DSA-t3%7CNT:Se%7CLO:BR&utm_medium=ppc&gad_source=1&gad_campaignid=19588998604&gbraid=0AAAAADMy-hbelzrSz2wqeXvzkYn-l-XdG&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFUZ2nhGcfS3FwDh4lO8-EVh3HABQ3_3lhxkMlaAeAIDPr3fa4bUg6YaAiniEALw_wcB>. Acesso em: 04 nov. 2025.
