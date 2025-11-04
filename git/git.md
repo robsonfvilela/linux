@@ -54,7 +54,8 @@ git rm arquivo1.txt
 ### `git mv`
 Renomeia e move arquivos em seu diretório de trabalho. Aqui está o comando do Git para renomear um arquivo:
 ```bash
-git mv arquivo1.txt arquivo2.txt```
+git mv arquivo1.txt arquivo2.txt
+```
 Para mover um arquivo para um diretório diferente, digite:
 ```bash
 git mv arquivo1.txt nova_pasta/
@@ -115,14 +116,18 @@ git tag v1.0
 ```
 ## Comandos de repositório remoto Git
 
-git clone
-Esse comando cria uma cópia de um repositório remoto em seu computador local. Um exemplo de uso básico do git clone é clonar um repositório do GitHub:
+### `git clone`
+Cria uma cópia de um repositório remoto em seu computador local. Um exemplo de uso básico do `git clone` é clonar um repositório do GitHub:
+```bash
 git clone https://github.com/username/meu-projeto.git
-git push
-Esse comando envia os commits do branch local do Git para um repositório remoto, atualizando-o com suas alterações mais recentes.
-Por exemplo, se você deseja enviar as das alterações do repositório local chamado “principal” para o repositório remoto chamado “origem”:
+```
+### `git push`
+Envia os commits do branch local do Git para um repositório remoto, atualizando-o com suas alterações mais recentes.
+Se desejar enviar as das alterações do repositório local chamado “principal” para o repositório remoto chamado “origem”:
+```bash
 git push origem principal
-git pull
+```
+### `git pull`
 Esse comando obtém e integra as alterações de um repositório remoto em seu branch local atual. Aqui está um exemplo de uso do git pull para extrair alterações do branch principal:
 git pull origem mestre
 git fetch
