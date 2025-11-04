@@ -18,13 +18,21 @@ Prepara alterações em arquivos para o próximo commit:
 ```bash
 git add nome_do_arquivo
 ```
+Adiciona todos os arquivos de uma vez:
+```bash
+git add .
+```
 ### `git commit`
-Use esse comando para criar uma mensagem de commit para as alterações, tornando-as parte do histórico do seu projeto:
+Cria uma mensagem de commit para as alterações, tornando-as parte do histórico do seu projeto:
+```bash
 git commit -m "Adicionar novo recurso"
+```
+### `git status``
+Exibe informações importantes sobre as modificações e o status de preparação de seus arquivos.
+```bash
 git status
-Esse comando exibe informações importantes sobre as modificações e o status de preparação de seus arquivos.
-git status
-git log
+```
+### `git log`
 Em sua forma básica, o git log permite visualizar uma lista cronológica do histórico de commits:
 git log
 git diff
