@@ -2,8 +2,9 @@
 
 ## Arquivos de configuração
 
+### Git
+- [Git](/git/git.md)
 ### Kitty
-
 - [`kitty.conf`](/kitty/kitty.conf)
 
 ### NeoVim (LazyVim)
