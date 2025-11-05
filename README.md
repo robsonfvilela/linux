@@ -28,7 +28,7 @@
 ```
 
 ### Terminal
-[COmandos do Terminal](console.md): alguns comandos podem funcionar apenas no **Linux** ou no **MacOS**.
+[COmandos do Terminal](terminal.md): alguns comandos podem funcionar apenas no **Linux** ou no **MacOS**.
 
 ### ZSH
 » Diretório: `~/`
