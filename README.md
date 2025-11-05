@@ -6,11 +6,11 @@
 - [Git](/git/git.md)
 
 ### Kitty
- Diretório: `~/.config/kitty/`
+» Diretório: `~/.config/kitty/`
 - [`kitty.conf`](/kitty/kitty.conf)
 
 ### NeoVim (LazyVim)
- Diretório: `~/.config/nvim/`
+» Diretório: `~/.config/nvim/`
 - [options.lua](/nvim/lua/config/options.lua)
 - [init.lua](/nvim/init.lua)
 ```css
@@ -27,5 +27,5 @@
 |   |-- init.lua
 ```
 ### ZSH
- Diretório: `~/`
+» Diretório: `~/`
 - [.zshrc](/zsh/.zshrc)
