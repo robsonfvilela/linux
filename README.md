@@ -26,6 +26,10 @@
 |   |       |-- gruvbox.lua /*exemplo de tema*/
 |   |-- init.lua
 ```
+
+### Terminal
+[COmandos do Terminal](console.md): alguns comandos podem funcionar apenas no **Linux** ou no **MacOS**.
+
 ### ZSH
 » Diretório: `~/`
 - [.zshrc](/zsh/.zshrc)
