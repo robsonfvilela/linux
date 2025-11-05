@@ -5,7 +5,7 @@
 ### Trem
 
 Mostra um trem passando da direita para a esquerda.
-```sh
+```css
 brew install sl
 sl
 ```
