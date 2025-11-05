@@ -15,11 +15,11 @@ sl
 nc towel.blinkenlights.nl 23
 ```
 ### Banner em ASCII
-```sh
+```bash
 banner -w 30 TEXTO
 ```
 Para que o texto fique na horizotal, instale o `figlet`.
-```sh
+```console
 figlet -w 30 TEXTO
 ```
 Alguns sites oferecem artes de ASCII:
