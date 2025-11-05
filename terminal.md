@@ -11,7 +11,7 @@ sl
 ```
 
 ### Star Wars: Episode IV — A New Hope
-```bash
+```shell
 nc towel.blinkenlights.nl 23
 ```
 ### Banner em ASCII
