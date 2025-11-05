@@ -4,10 +4,13 @@
 
 ### Git
 - [Git](/git/git.md)
+
 ### Kitty
+Local: `~/.config/kitty/`
 - [`kitty.conf`](/kitty/kitty.conf)
 
 ### NeoVim (LazyVim)
+Local: `~/.config/nvim/`
 - [options.lua](/nvim/lua/config/options.lua)
 - [init.lua](/nvim/init.lua)
 ```css
@@ -23,6 +26,6 @@
 |   |       |-- gruvbox.lua /*exemplo de tema*/
 |   |-- init.lua
 ```
-
 ### ZSH
+Local: `~/`
 - [.zshrc](/zsh/.zshrc)
