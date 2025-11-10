@@ -12,6 +12,17 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
 
+# MARKDOWN: Mostra ```:
+# autocmd FileType markdown setlocal conceallevel=0
+
+# vim.keymap.set("n", "<leader>tc", ":setlocal <C-R>=&conceallevel ? 'conceallevel=2' : 'conceallevel=2'<CR><CR>", { desc = "[T]oggle [C]onceallevel"} )
+
+# detecta markdown corretamente
+# vim.cmd[[
+# augroup filetypedetect
+#   autocmd!
+  # Define arquivos .md para usar a sintaxe markdown autocmd BufNewFile,BufRead *.md set synitax=markdown augroup END
+# ]]
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -126,17 +137,22 @@ alias alexa="brew"
 alias alexa-instale-="brew install "
 alias update="brew update && brew upgrade"
 
+# COMANDOS
+alias cl="clear"
+alias lixo="rm -rf ~/.Trash/*"
 ## ALIAS: VIM
 alias zshrc="vim ~/.zshrc"
 
 
 ## ALIAS: CD
-alias projetos="cd ~/Projetos/"
-alias linux="cd ~/Projetos/linux"
-alias ads-privado="cd ~/Projetos/ads-privado"
+alias project="cd ~/Projetos/"
+alias project-linux="cd ~/Projetos/linux"
+alias project-ads="cd ~/Projetos/ads-privado"
+alias project-java="cd ~/Projetos/ads-privado/java"
+alias project-typst="cd ~/Projetos/typst"
 
 ## ALIAS: OUTROS
-
+alias zsh-restart="source ~/.zshrc"
 
 # ILoveCandy
 # plugins=(git zsh-autosuggestions)
@@ -148,3 +164,4 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export HOMEBREW_NO_BUILD_FROM_SOURCE=1
+export PATH="/opt/homebrew/opt/llvm@17/bin:$PATH"
